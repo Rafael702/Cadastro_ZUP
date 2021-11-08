@@ -11,10 +11,8 @@ public class CadastroService {
     @Autowired
     private CadastroRepository cadastroRepository;
 
-    private List<Cadastro> cadastros = new ArrayList<>();
-
     public void salvarCadastros(Cadastro cadastro){
-        cadastros.add(cadastro);
+        cadastroRepository.save(cadastro);
     }
 
 }
