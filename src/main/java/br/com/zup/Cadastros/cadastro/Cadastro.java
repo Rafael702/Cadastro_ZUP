@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "cadastros")
@@ -20,6 +21,7 @@ public class Cadastro {
     private boolean moraSozinho;
     private boolean temPet;
     private int idade;
+    private LocalDate dataDoCadastro;
 
     public Cadastro() {
     }
