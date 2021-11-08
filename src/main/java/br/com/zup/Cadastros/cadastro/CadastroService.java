@@ -13,5 +13,8 @@ public class CadastroService {
 
     private List<Cadastro> cadastros = new ArrayList<>();
 
+    public void salvarCadastros(Cadastro cadastro){
+        cadastros.add(cadastro);
+    }
 
 }
